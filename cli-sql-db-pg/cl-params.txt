@@ -1,0 +1,13 @@
+/O2  /Fe:build\cli-sql-db-pg.exe /EHsc
+/I "C:\Repos\vcpkg\installed\x64-windows-static\include"
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\SDK\ScopeCppSDK\vc15\SDK\include\um"
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\SDK\ScopeCppSDK\vc15\SDK\include\shared"
+src\main-libodb-pgsql.cpp 
+"C:\Repos\vcpkg\installed\x64-windows-static\lib\libodb-pgsql.lib"
+"C:\Repos\vcpkg\installed\x64-windows-static\lib\libodb.lib"
+"C:\Repos\vcpkg\installed\x64-windows-static\lib\libpgtypes.lib"
+"C:\Repos\vcpkg\installed\x64-windows-static\lib\libpgcommon.lib"
+"C:\Repos\vcpkg\installed\x64-windows-static\lib\libpq.lib"
+"C:\Repos\vcpkg\installed\x64-windows-static\lib\libpgport.lib"
+"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17763.0\um\x64\WS2_32.Lib"
+/link /machine:X64

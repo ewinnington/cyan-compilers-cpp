@@ -68,6 +68,8 @@ BIND INSERT : http://www.adp-gmbh.ch/sqlite/bind_insert.html
 
 # cli-rabbitmq
 
+*NOT WORKING*
+
 *Currently not working due to issues with compilation and tcp connection*
 
 ```
@@ -79,7 +81,9 @@ vcpkg install boost-asio --triplet x64-windows-static
 
 reference: https://github.com/CopernicaMarketingSoftware/AMQP-CPP
 
-# cli-redis
+# cli-redis 
+
+*WORKS*
 
 There are a few redis clients in vcpkg, I was going to use hiredis for simplicity(* Nope / had an issue with uresolved dependencies to win32_interop.lib in hiredis.lib*). So I've got with [cpp_redis](https://github.com/cpp-redis/cpp_redis) due the fact it has no dependencies. 
 
@@ -105,3 +109,12 @@ And finally used the [Examples](https://github.com/cpp-redis/cpp_redis/wiki/Exam
 cpp_redis_ref: https://github.com/cpp-redis/cpp_redis 
 
 # cli-sql-db-pg 
+
+*NOT WORKING*
+
+Didn't work due to compilation issues after installing : vcpkg install libpqxx --triplet x64-windows-static
+
+Didn't work due to compilation issues after installing : vcpkg install libodb-pgsql --triplet x64-windows-static
+
+# REST Server and client
+

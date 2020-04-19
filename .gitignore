@@ -3,3 +3,4 @@ cli-sqlite/build/*.exe
 cli-rabbitmq/build/*.exe
 cli-redis/build/cli-redis.exe
 cli-redis/obj/main.obj
+cli-sql-db-pg/obj/main-libodb-pgsql.obj
