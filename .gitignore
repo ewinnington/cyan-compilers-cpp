@@ -1,0 +1,3 @@
+1-compiler-clang/*.exe
+cli-sqlite/build/*.exe
+cli-rabbitmq/build/*.exe

@@ -1,0 +1,5 @@
+/O2 /Fe: build\hellosql.exe
+/I C:\Repos\vcpkg\packages\sqlite3_x64-windows-static\include\
+src\main.cpp 
+C:\Repos\vcpkg\packages\sqlite3_x64-windows-static\lib\sqlite3.lib
+/link /machine:X64
