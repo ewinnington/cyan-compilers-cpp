@@ -1,0 +1,8 @@
+/O2 /Fe: build\send.exe /EHsc
+-DNOMINMAX
+/I C:\Repos\vcpkg\packages\amqpcpp_x64-windows-static\include
+/I "C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared"
+src\recieve.cpp 
+C:\Repos\vcpkg\packages\amqpcpp_x64-windows-static\lib\amqpcpp.lib
+/link /machine:X64

@@ -68,5 +68,15 @@ BIND INSERT : http://www.adp-gmbh.ch/sqlite/bind_insert.html
 
 # cli-rabbitmq
 
-```cli-rabbitmq\main.cpp```
+*Currently not working due to issues with compilation and tcp connection*
 
+```
+C:\Repos\vcpkg\packages\amqpcpp_x64-windows-static\include\amqpcpp/libboostasio.h(83): error C2039: 'posix': is not a member of 'boost::asio' 
+```
+
+vcpkg install amqpcpp --triplet x64-windows-static
+vcpkg install boost-asio --triplet x64-windows-static 
+
+reference: https://github.com/CopernicaMarketingSoftware/AMQP-CPP
+
+# cli-rabbitmq
