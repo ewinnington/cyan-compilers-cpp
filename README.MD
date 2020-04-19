@@ -116,5 +116,18 @@ Didn't work due to compilation issues after installing : vcpkg install libpqxx -
 
 Didn't work due to compilation issues after installing : vcpkg install libodb-pgsql --triplet x64-windows-static
 
+Even ```vcpkg install libpq[client] --triplet x64-windows-static --recurse``` _failed_
+```
+Error: Building package libpq:x64-windows-static failed with: BUILD_FAILED
+Please ensure you're using the latest portfiles with `.\vcpkg update`
+  Package: libpq:x64-windows-static
+  Vcpkg version: 2020.02.04-nohash
+```
+
 # REST Server and client
 
+vcpkg install cpprestsdk cpprestsdk:x64-windows
+
+https://medium.com/audelabs/modern-c-micro-service-implementation-rest-api-b499ffeaf898
+
+https://medium.com/audelabs/modern-c-micro-serivce-rest-api-part-ii-7be067440ca8

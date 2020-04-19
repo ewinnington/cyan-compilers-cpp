@@ -10,4 +10,5 @@ src\main-libodb-pgsql.cpp
 "C:\Repos\vcpkg\installed\x64-windows-static\lib\libpq.lib"
 "C:\Repos\vcpkg\installed\x64-windows-static\lib\libpgport.lib"
 "C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17763.0\um\x64\WS2_32.Lib"
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\SDK\ScopeCppSDK\vc15\SDK\lib\Secur32.Lib"
 /link /machine:X64
