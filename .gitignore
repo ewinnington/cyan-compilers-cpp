@@ -4,3 +4,9 @@ cli-rabbitmq/build/*.exe
 cli-redis/build/cli-redis.exe
 cli-redis/obj/main.obj
 cli-sql-db-pg/obj/main-libodb-pgsql.obj
+cyan-rest-client/build/*.dll
+cyan-rest-client/build/*.exe
+cyan-rest-client/obj/*.obj
+cyan-rest-srv/build/*.dll
+cyan-rest-srv/build/*.exe
+cyan-rest-srv/obj/*.obj

@@ -126,8 +126,12 @@ Please ensure you're using the latest portfiles with `.\vcpkg update`
 
 # REST Server and client
 
+For the REST Server and client, I'm using the [cpprestsdk from Microsoft](https://github.com/Microsoft/cpprestsdk) which makes it really easy. 
+
+```
 vcpkg install cpprestsdk cpprestsdk:x64-windows
+```
 
-https://medium.com/audelabs/modern-c-micro-service-implementation-rest-api-b499ffeaf898
+I'm using the code from https://mariusbancila.ro/blog/2017/11/19/revisited-full-fledged-client-server-example-with-c-rest-sdk-2-10/ and it directly works! 
 
-https://medium.com/audelabs/modern-c-micro-serivce-rest-api-part-ii-7be067440ca8
+This time, I'm not using static build, so I have to include the DLLs in the Build directory to launch the applications, but they work out of the box in Administrator mode. 
