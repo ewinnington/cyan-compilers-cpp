@@ -1,3 +1,5 @@
 1-compiler-clang/*.exe
 cli-sqlite/build/*.exe
 cli-rabbitmq/build/*.exe
+cli-redis/build/cli-redis.exe
+cli-redis/obj/main.obj

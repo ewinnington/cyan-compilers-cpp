@@ -1,0 +1,8 @@
+/DEBUG /Fe:build\cli-redis.exe /EHsc
+/I "C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared"
+/I "C:\Repos\vcpkg\installed\x64-windows-static\include"
+src\main.cpp 
+C:\Repos\vcpkg\installed\x64-windows-static\lib\cpp_redis.lib
+C:\Repos\vcpkg\installed\x64-windows-static\lib\tacopie.lib
+/link /machine:X64

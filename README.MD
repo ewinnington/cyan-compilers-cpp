@@ -79,4 +79,29 @@ vcpkg install boost-asio --triplet x64-windows-static
 
 reference: https://github.com/CopernicaMarketingSoftware/AMQP-CPP
 
-# cli-rabbitmq
+# cli-redis
+
+There are a few redis clients in vcpkg, I was going to use hiredis for simplicity(* Nope / had an issue with uresolved dependencies to win32_interop.lib in hiredis.lib*). So I've got with [cpp_redis](https://github.com/cpp-redis/cpp_redis) due the fact it has no dependencies. 
+
+```
+vcpkg install cpp-redis  --triplet x64-windows-static
+```
+
+And finally used the [Examples](https://github.com/cpp-redis/cpp_redis/wiki/Examples) directly because of the initialisation of the Windows network dll causing issues. 
+
+```
+#ifdef _WIN32
+  //! Windows network DLL init
+  WORD version = MAKEWORD(2, 2);
+  WSADATA data;
+
+  if (WSAStartup(version, &data) != 0) {
+    std::cerr << "WSAStartup() failure" << std::endl;
+    return -1;
+  }
+#endif /* _WIN32 */
+```
+
+cpp_redis_ref: https://github.com/cpp-redis/cpp_redis 
+
+# cli-sql-db-pg 
